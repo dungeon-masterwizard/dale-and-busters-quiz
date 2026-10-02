@@ -293,21 +293,6 @@ nextButton.addEventListener("click", function() {
 });
 
 
-/* DEVELOPMENT SKIP */
-
-document.addEventListener("keydown", function(event) {
-
-    if (
-        event.ctrlKey &&
-        event.shiftKey &&
-        event.key === "S"
-    ) {
-
-        showReadyScreen();
-
-    }
-
-});
 
 
 /* START */
