@@ -327,7 +327,27 @@ nextYes.addEventListener("click", function() {
 
 nextNo.addEventListener("click", function() {
 
-    console.log("NO clicked");
+    const nextMenu =
+        document.querySelector("#next-menu");
+
+    const infoMenu =
+        document.querySelector("#info-menu");
+
+    nextMenu.style.opacity = "0";
+
+    setTimeout(function() {
+
+        nextMenu.style.display = "none";
+
+        infoMenu.style.display = "block";
+
+        setTimeout(function() {
+
+            infoMenu.style.opacity = "1";
+
+        }, 100);
+
+    }, 1000);
 
 });
 
