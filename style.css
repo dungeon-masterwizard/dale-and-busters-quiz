@@ -131,3 +131,34 @@ body {
     color: #BFA7D8;
     font-size: 20px;
 }
+
+#result-screen {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+    text-align: center;
+    margin-top: 150px;
+}
+
+#result-screen h1 {
+    font-size: 40px;
+}
+
+#explanation {
+    max-width: 700px;
+    margin: 30px auto;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+#next-button {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 0;
+    font-family: "Roboto Slab", serif;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    background: #9CCFE8;
+    color: #163047;
+}
