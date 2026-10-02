@@ -238,11 +238,11 @@ function checkAnswer(selectedAnswer) {
 
 
         if (selectedAnswer === question.answer) {
+    result.textContent = "CORRECT!";
+    score++;
 
-            result.textContent = "CORRECT!";
-            score++;
-
-        } else {
+    localStorage.setItem("score", score);
+} else {
 
             result.textContent = "INCORRECT!";
 
