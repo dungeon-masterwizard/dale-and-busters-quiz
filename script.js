@@ -306,21 +306,19 @@ const nextNo =
 
 
 nextYes.addEventListener("click", function() {
-    const nextMenu = document.querySelector("#next-menu");
+
+    const nextMenu =
+        document.querySelector("#next-menu");
+
     nextMenu.style.opacity = "0";
 
     setTimeout(function() {
+
         nextMenu.style.display = "none";
 
         currentQuestion++;
+
         localStorage.setItem("currentQuestion", currentQuestion);
-
-        showQuestion();
-    }, 1000);
-});
-        nextMenu.style.display = "none";
-
-        currentQuestion++;
 
         showQuestion();
 
