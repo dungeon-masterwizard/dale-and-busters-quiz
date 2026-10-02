@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,16 +14,35 @@
 
     <main class="quiz-container">
 
-        <h1>DALE & BUSTERS</h1>
-        <h2>The Campaign Quiz</h2>
+        <!-- QUESTION SCREEN -->
+        <div id="question-screen">
 
-        <p id="question">Where did the party originally meet?</p>
+            <h1>DALE & BUSTERS</h1>
+            <h2>The Campaign Quiz</h2>
 
-        <div id="answers">
-            <button>A) The Wet Trout</button>
-            <button>B) The Lucky Liar</button>
-            <button>C) The Northlook</button>
-            <button>D) Hook, Line & Sinker</button>
+            <p id="question">Where did the party originally meet?</p>
+
+            <div id="answers">
+                <button>A) The Wet Trout</button>
+                <button>B) The Lucky Liar</button>
+                <button>C) The Northlook</button>
+                <button>D) Hook, Line & Sinker</button>
+            </div>
+
+        </div>
+
+
+        <!-- RESULT SCREEN -->
+        <div id="result-screen">
+
+            <h1 id="result">Correct!</h1>
+
+            <p id="explanation">
+                The party originally met at the Northlook in Bryn Shander.
+            </p>
+
+            <button id="next-button">Next Question</button>
+
         </div>
 
     </main>
@@ -30,4 +50,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
