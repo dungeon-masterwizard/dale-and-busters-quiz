@@ -1,6 +1,6 @@
 body {
-    background: #dff4ff;
-    color: #241b35;
+    background: #16324A;
+    color: #FFFFFF;
     font-family: "Cinzel", serif;
 }
 
@@ -8,7 +8,7 @@ body {
     text-align: center;
     margin-top: 200px;
     font-size: 30px;
-    color: #241b35;
+    color: #FFFFFF;
 }
 
 #question-screen {
@@ -39,27 +39,27 @@ body {
 /* A - PURPLE */
 
 #answers button:nth-child(1) {
-    background: #c9b6e4;
-    color: #241b35;
+    background: #BFA7D8;
+    color: #241B35;
 }
 
 /* B - GREEN */
 
 #answers button:nth-child(2) {
-    background: #b8dfc8;
-    color: #1d3024;
+    background: #A8D5BA;
+    color: #183021;
 }
 
 /* C - BLUE */
 
 #answers button:nth-child(3) {
-    background: #a9d9ee;
-    color: #18303d;
+    background: #9CCFE8;
+    color: #163047;
 }
 
 /* D - RED */
 
 #answers button:nth-child(4) {
-    background: #e6b4b4;
-    color: #3a2020;
+    background: #DDA6A6;
+    color: #3A2020;
 }
