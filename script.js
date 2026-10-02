@@ -60,15 +60,25 @@ const noButton = document.querySelector("#no-button");
 
 yesButton.addEventListener("click", function() {
 
-    console.log("YES clicked");
-
     const readyScreen = document.querySelector("#ready-screen");
     const questionScreen = document.querySelector("#question-screen");
 
-    readyScreen.style.display = "none";
-    questionScreen.style.display = "block";
+    // Fade out "ARE YOU READY?"
+    readyScreen.style.opacity = "0";
+
+    // Wait for the fade to finish
+    setTimeout(function() {
+
+        readyScreen.style.display = "none";
+
+        // Show Question 1
+        questionScreen.style.display = "block";
+        questionScreen.style.opacity = "1";
+
+    }, 1000);
 
 });
+
 
 
 noButton.addEventListener("click", function() {
