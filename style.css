@@ -121,3 +121,13 @@ body {
     font-weight: 600;
     line-height: 1.5;
 }
+
+#question-screen h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#question-screen h2 {
+    color: #BFA7D8;
+    font-size: 20px;
+}
