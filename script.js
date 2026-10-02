@@ -298,7 +298,38 @@ nextButton.addEventListener("click", function() {
 
 });
 
+const nextYes =
+    document.querySelector("#next-yes");
 
+const nextNo =
+    document.querySelector("#next-no");
+
+
+nextYes.addEventListener("click", function() {
+
+    const nextMenu =
+        document.querySelector("#next-menu");
+
+    nextMenu.style.opacity = "0";
+
+    setTimeout(function() {
+
+        nextMenu.style.display = "none";
+
+        currentQuestion++;
+
+        showQuestion();
+
+    }, 1000);
+
+});
+
+
+nextNo.addEventListener("click", function() {
+
+    console.log("NO clicked");
+
+});
 
 
 /* START */
