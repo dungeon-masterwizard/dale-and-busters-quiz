@@ -51,20 +51,10 @@ function showReadyScreen() {
     const introScreen = document.querySelector("#intro-screen");
     const readyScreen = document.querySelector("#ready-screen");
 
-    introScreen.style.opacity = "0";
+    introScreen.style.display = "none";
 
-    setTimeout(function() {
-
-        introScreen.style.display = "none";
-        readyScreen.style.display = "block";
-
-        setTimeout(function() {
-
-            readyScreen.style.opacity = "1";
-
-        }, 100);
-
-    }, 1000);
+    readyScreen.style.display = "block";
+    readyScreen.style.opacity = "1";
 }
 
 
