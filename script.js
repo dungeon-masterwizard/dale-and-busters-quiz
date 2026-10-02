@@ -13,7 +13,8 @@ const introLines = [
     "5 CATEGORIES..."
 ];
 
-
+let line = 0;
+let character = 0;
 
 /* INTRO */
 
