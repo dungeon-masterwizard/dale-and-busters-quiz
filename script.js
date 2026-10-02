@@ -54,3 +54,9 @@ function showReadyScreen() {
 }
 
 typeLine();
+const yesButton = document.querySelector("#yes-button");
+const noButton = document.querySelector("#no-button");
+
+yesButton.addEventListener("click", function() {
+    console.log("YES clicked");
+});
