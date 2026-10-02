@@ -20,9 +20,7 @@ function typeLine() {
 
     if (character <= introLines[line].length) {
         setTimeout(typeLine, 50);
-    }
-
-    else {
+    } else {
         line++;
         character = 0;
 
@@ -33,6 +31,7 @@ function typeLine() {
         }
     }
 }
+
 
 function showReadyScreen() {
 
@@ -53,13 +52,34 @@ function showReadyScreen() {
     }, 1000);
 }
 
-typeLine();
+
+/* YES AND NO BUTTONS */
+
 const yesButton = document.querySelector("#yes-button");
 const noButton = document.querySelector("#no-button");
 
 yesButton.addEventListener("click", function() {
+
     console.log("YES clicked");
+
+    const readyScreen = document.querySelector("#ready-screen");
+    const questionScreen = document.querySelector("#question-screen");
+
+    readyScreen.style.display = "none";
+    questionScreen.style.display = "block";
+
 });
+
+
+noButton.addEventListener("click", function() {
+
+    console.log("NO clicked");
+
+});
+
+
+/* DEVELOPMENT SKIP */
+
 document.addEventListener("keydown", function(event) {
 
     if (event.ctrlKey && event.shiftKey && event.key === "S") {
@@ -67,3 +87,6 @@ document.addEventListener("keydown", function(event) {
     }
 
 });
+
+
+typeLine();
