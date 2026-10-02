@@ -1,40 +1,25 @@
-const buttons = document.querySelectorAll("#answers button");
+const introText = document.querySelector("#intro-text");
 
-const questionScreen = document.querySelector("#question-screen");
-const resultScreen = document.querySelector("#result-screen");
+const introLines = [
+    "DALE & BUSTERS",
+    "A DUNGEONS & DRAGONS CAMPAIGN",
+    "PRESENTS...",
+    "THE CAMPAIGN QUIZ",
+    "CREATED BY MAX YAKUBOV",
+    "50 QUESTIONS",
+    "5 CATEGORIES"
+];
 
-const result = document.querySelector("#result");
-const nextButton = document.querySelector("#next-button");
-
-
-resultScreen.style.display = "none";
-
-
-buttons.forEach(function(button) {
-
-    button.addEventListener("click", function() {
-
-        questionScreen.style.display = "none";
-        resultScreen.style.display = "block";
-
-        if (button.textContent.startsWith("C)")) {
-
-            result.textContent = "Correct!";
-
-        } else {
-
-            result.textContent = "Incorrect!";
-
-        }
-
-    });
-
-});
+let line = 0;
 
 
-nextButton.addEventListener("click", function() {
+function typeLine() {
 
-    resultScreen.style.display = "none";
-    questionScreen.style.display = "block";
+    introText.textContent = introLines[line];
 
-});
+    line++;
+
+}
+
+
+typeLine();
