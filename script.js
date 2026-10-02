@@ -11,15 +11,27 @@ const introLines = [
 ];
 
 let line = 0;
-
+let character = 0;
 
 function typeLine() {
 
-    introText.textContent = introLines[line];
+    // Put the current line into the screen
+    introText.textContent = introLines[line].substring(0, character);
 
-    line++;
+    character++;
 
+    // Keep typing until the whole line is displayed
+    if (character <= introLines[line].length) {
+        setTimeout(typeLine, 50);
+    }
+
+    // Once the line is finished, move to the next one
+    else {
+        line++;
+        character = 0;
+
+        setTimeout(typeLine, 1500);
+    }
 }
-
 
 typeLine();
