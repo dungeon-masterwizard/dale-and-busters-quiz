@@ -351,6 +351,80 @@ nextNo.addEventListener("click", function() {
 
 });
 
+const scoreButton =
+    document.querySelector("#score-button");
+
+const questionButton =
+    document.querySelector("#question-button");
+
+const creatorButton =
+    document.querySelector("#creator-button");
+
+const testedButton =
+    document.querySelector("#tested-button");
+
+const infoBack =
+    document.querySelector("#info-back");
+
+const infoDisplay =
+    document.querySelector("#info-display");
+
+
+scoreButton.addEventListener("click", function() {
+
+    infoDisplay.textContent =
+        "Your Score Is: " + score + " / 50";
+
+});
+
+
+questionButton.addEventListener("click", function() {
+
+    infoDisplay.textContent =
+        "You are on question: " +
+        (currentQuestion + 1) + " / 50";
+
+});
+
+
+creatorButton.addEventListener("click", function() {
+
+    infoDisplay.textContent =
+        "Max Yakubov, the Dungeon Master of this campaign, made this quiz whilst also learning basic Python.";
+
+});
+
+
+testedButton.addEventListener("click", function() {
+
+    infoDisplay.textContent =
+        "The quiz tests Heroes & Enemies, History, Lore & Items, Locations & Geography, and Deep Cuts.";
+
+});
+
+
+infoBack.addEventListener("click", function() {
+
+    const infoMenu =
+        document.querySelector("#info-menu");
+
+    infoMenu.style.opacity = "0";
+
+    setTimeout(function() {
+
+        infoMenu.style.display = "none";
+
+        nextMenu.style.display = "block";
+
+        setTimeout(function() {
+
+            nextMenu.style.opacity = "1";
+
+        }, 100);
+
+    }, 1000);
+
+});
 
 /* START */
 
