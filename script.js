@@ -407,7 +407,9 @@ infoBack.addEventListener("click", function() {
 
     const infoMenu =
         document.querySelector("#info-menu");
-
+    const nextMenu = 
+        document.querySelector("#next-menu");
+    
     infoMenu.style.opacity = "0";
 
     setTimeout(function() {
