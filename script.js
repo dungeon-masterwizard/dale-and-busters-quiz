@@ -48,7 +48,6 @@ function typeLine() {
 /* READY SCREEN */
 
 function showReadyScreen() {
-
     const introScreen = document.querySelector("#intro-screen");
     const readyScreen = document.querySelector("#ready-screen");
 
@@ -56,8 +55,9 @@ function showReadyScreen() {
 
     readyScreen.style.display = "block";
     readyScreen.style.opacity = "1";
-}
 
+    localStorage.setItem("introCompleted", "true");
+}
 
 /* YES / NO */
 
