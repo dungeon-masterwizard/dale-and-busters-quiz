@@ -435,4 +435,8 @@ infoBack.addEventListener("click", function() {
 
 /* START */
 
-typeLine();
+if (introCompleted) {
+    showReadyScreen();
+} else {
+    typeLine();
+}
