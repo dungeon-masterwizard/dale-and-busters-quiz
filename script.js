@@ -1,6 +1,7 @@
 let introCompleted = localStorage.getItem("introCompleted") === "true";
 let score = Number(localStorage.getItem("score")) || 0;
 let currentQuestion = Number(localStorage.getItem("currentQuestion")) || 0;
+
 const introText = document.querySelector("#intro-text");
 
 const introLines = [
