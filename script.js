@@ -274,19 +274,25 @@ const nextButton =
 
 nextButton.addEventListener("click", function() {
 
-    currentQuestion++;
-
     const resultScreen =
         document.querySelector("#result-screen");
 
-    resultScreen.style.opacity = "0";
+    const nextMenu =
+        document.querySelector("#next-menu");
 
+    resultScreen.style.opacity = "0";
 
     setTimeout(function() {
 
         resultScreen.style.display = "none";
 
-        showQuestion();
+        nextMenu.style.display = "block";
+
+        setTimeout(function() {
+
+            nextMenu.style.opacity = "1";
+
+        }, 100);
 
     }, 1000);
 
