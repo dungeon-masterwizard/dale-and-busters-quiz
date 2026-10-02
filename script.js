@@ -60,3 +60,10 @@ const noButton = document.querySelector("#no-button");
 yesButton.addEventListener("click", function() {
     console.log("YES clicked");
 });
+document.addEventListener("keydown", function(event) {
+
+    if (event.ctrlKey && event.shiftKey && event.key === "S") {
+        showReadyScreen();
+    }
+
+});
