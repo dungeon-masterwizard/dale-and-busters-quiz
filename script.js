@@ -1,12 +1,12 @@
 const introText = document.querySelector("#intro-text");
 
 const introLines = [
-    "DALE & BUSTERS"
+    "DALE & BUSTERS",
     "PRESENTS...",
     "THE GRAND QUIZ",
     "CREATED BY MAX YAKUBOV",
     "50 QUESTIONS,",
-    "5 CATEGORIES..."
+    "5 CATEGORIES...",
     "ARE YOU READY?"
 ];
 
