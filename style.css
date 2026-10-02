@@ -202,3 +202,51 @@ body {
     background: #DDA6A6;
     color: #3A2020;
 }
+
+#info-menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+    text-align: center;
+    margin-top: 120px;
+}
+
+#info-menu h1 {
+    font-size: 40px;
+}
+
+#info-menu > p {
+    font-size: 20px;
+}
+
+#info-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+#info-buttons button {
+    padding: 15px;
+    border: none;
+    border-radius: 0;
+    font-family: "Roboto Slab", serif;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    background: #0F2638;
+    color: #FFFFFF;
+}
+
+#info-back {
+    background: #DDA6A6 !important;
+    color: #3A2020 !important;
+}
+
+#info-display {
+    max-width: 700px;
+    margin: 30px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
